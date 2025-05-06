@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+
+  <h1>JavaScript Event Playground 🎉</h1>
+
+  <!-- Button that changes text when clicked -->
+  <button id="changeTextBtn">Click Me</button>
+
+  <!-- Button that triggers an alert on double click -->
+  <button id="dblClickBtn">Double Click Me</button>
+
+  <!-- Box that changes color on hover -->
+  <div id="hoverBox">Hover over me!</div>
+
+  <!-- Input that detects key presses -->
+  <input type="text" id="keypressInput" placeholder="Type something...">
+
+  <!-- Simple image gallery that changes image on button click -->
+  <div id="gallery">
+    <img id="galleryImg" src="boat.webp" alt="Gallery">
+    <br>
+    <button onclick="changeImage()">Next Image</button>
+  </div>
+
+  <!-- Tab component with 2 tabs -->
+  <div class="tabs">
+    <button class="tabBtn" data-tab="tab1">Tab 1</button>
+    <button class="tabBtn" data-tab="tab2">Tab 2</button>
+
+    <!-- Tab content areas -->
+    <div id="tab1" class="tabContent">Content for Tab 1</div>
+    <div id="tab2" class="tabContent" style="display:none;">Content for Tab 2</div>
+  </div>
+
+  <!-- Form with email and password fields -->
+  <form id="signupForm">
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <button type="submit">Submit</button>
+    <div id="feedback"></div> <!-- Real-time validation feedback will appear here -->
+  </form>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
